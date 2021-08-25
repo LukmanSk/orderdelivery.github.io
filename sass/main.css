@@ -1,0 +1,229 @@
+/* FONTS :  font-family: 'Open Sans', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+header nav .hamburger {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  padding-right: 2.5rem;
+}
+
+header nav .hamburger .line {
+  background: #000;
+  width: 2em;
+  height: .2em;
+  margin-top: .4em;
+  border-radius: 3px;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  padding-right: 8em;
+}
+
+header nav ul li {
+  padding: 0 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #111111;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #ff2424;
+}
+
+header nav ul li .active {
+  color: #478ac9;
+}
+
+@media (min-width: 60em) {
+  header nav .hamburger {
+    display: none;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main {
+  padding: 2rem;
+}
+
+main .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3em;
+}
+
+main .columns .col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .columns .img-container {
+  font-size: 1.8vw;
+}
+
+main .columns .img-container .box1 {
+  background: #f0aa67;
+  height: 24.125em;
+  width: 25.313em;
+}
+
+main .columns .img-container .box2 {
+  width: 35.625em;
+  height: 27.063em;
+  position: relative;
+  margin-top: -20em;
+  margin-left: 4em;
+}
+
+main .columns .img-container .box2 img {
+  width: inherit;
+  height: inherit;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .columns .img-container .box3 {
+  width: 26.063em;
+  height: 18.438em;
+  margin-top: -15.5em;
+  margin-left: 16em;
+}
+
+main .columns .img-container .box3 img {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+main .columns .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .columns .text-container h2 {
+  font-size: 2.25rem;
+  margin: 1rem 0;
+}
+
+main .columns .text-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+main .columns .text-container .img-credit a {
+  color: #000;
+  text-underline-offset: .2em;
+  -webkit-text-decoration-color: #f0aa67;
+          text-decoration-color: #f0aa67;
+}
+
+main .columns .text-container .btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #f0aa67;
+  padding: .7rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+main .columns .text-container .btn:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media (min-width: 60em) {
+  main {
+    padding: 6rem;
+  }
+  main .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .columns .img-container {
+    font-size: 1vw;
+  }
+}
+
+footer {
+  background: #333333;
+}
+
+footer p {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer .sample-text {
+  font-size: 0.875rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: #adcce9;
+  text-underline-offset: .2em;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,196 @@
+/* FONTS :  font-family: 'Open Sans', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Colors
+$clr-01:#111111;
+$clr-02:#478ac9;
+$clr-03:#f0aa67;
+$clr-04:#333333;
+$clr-05:#adcce9;
+// General Styling 
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// 
+header {
+    nav {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        .hamburger {
+            width: fit-content;
+            margin-left: auto;
+            padding-right: 2.5rem;
+            .line {
+                background: #000;
+                width: 2em;
+                height: .2em;
+                margin-top: .4em;
+                border-radius: 3px;
+            }
+        }
+        ul {
+            display: none;
+            list-style: none;
+            width: fit-content;
+            margin-left: auto;
+            padding-right: 8em;
+            li {
+                padding: 0 2rem;
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: $clr-01;
+                    transition: all .1s ease-in-out;
+                    &:hover {
+                        color: rgb(255, 36, 36);
+                    }
+                }
+                .active {
+                    color: $clr-02;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 60em) {
+    header {
+        nav {
+            .hamburger {
+                display: none;
+            }
+            ul {
+                display: flex;
+            }
+        }
+    }
+}
+
+// main
+main {
+    padding: 2rem;
+    .columns {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        .col-1 {
+            display: flex;
+        }
+        .img-container {
+            font-size: 1.8vw;
+            .box1 {
+                background: $clr-03;
+                height: 24.125em;
+                width: 25.313em;
+            }
+            .box2 {
+                width: 35.625em;
+                height: 27.063em;
+                position: relative;
+                margin-top: -20em;
+                margin-left: 4em;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+            .box3 {
+                width: 26.063em;
+                height: 18.438em;
+                margin-top: -15.5em;
+                margin-left: 16em;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    display: block;
+                }
+            }
+        }
+        .col-2 {
+            display: flex;
+            align-items: center;
+        }
+        .text-container {
+            h2 {
+                font-size: 2.25rem;
+                margin: 1rem 0;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin: 1rem 0;
+            }
+            .img-credit {
+                a {
+                    color: #000;
+                    text-underline-offset: .2em;
+                    text-decoration-color: $clr-03;
+                }
+            }
+            .btn {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                background: $clr-03;
+                padding: .7rem 2rem;
+                font-size: 0.875rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                display: inline-block;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    filter: brightness(90%);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:60em) {
+    main {
+        padding: 6rem;
+        .columns {
+            display: flex;
+            flex-direction: row;
+            .img-container {
+                font-size: 1vw;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background: $clr-04;
+    p {
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+    .sample-text {
+        font-size: 0.875rem;
+    }
+    .credit {
+        font-size: 0.8rem;
+        a {
+            color: $clr-05;
+            text-underline-offset: .2em;
+        }
+    }
+}
